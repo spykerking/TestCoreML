@@ -15,6 +15,8 @@
 		4A036F0B1EE92996000AAE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A036F091EE92996000AAE7C /* LaunchScreen.storyboard */; };
 		4A036F161EE92996000AAE7C /* TestCoreMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A036F151EE92996000AAE7C /* TestCoreMLTests.m */; };
 		4A036F211EE92997000AAE7C /* TestCoreMLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A036F201EE92997000AAE7C /* TestCoreMLUITests.m */; };
+		4A90E3FC1EE92AEF0032C072 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E3FB1EE92AEE0032C072 /* Resnet50.mlmodel */; };
+		4A90E3FE1EE931550032C072 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4A90E3FD1EE931550032C072 /* timg.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		4A036F1C1EE92996000AAE7C /* TestCoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCoreMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A036F201EE92997000AAE7C /* TestCoreMLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoreMLUITests.m; sourceTree = "<group>"; };
 		4A036F221EE92997000AAE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A90E3FB1EE92AEE0032C072 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+		4A90E3FD1EE931550032C072 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = timg.jpeg; path = ../../../../Downloads/timg.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		4A036EFA1EE92996000AAE7C /* TestCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				4A90E3FA1EE92A9C0032C072 /* Resources */,
 				4A036EFE1EE92996000AAE7C /* AppDelegate.h */,
 				4A036EFF1EE92996000AAE7C /* AppDelegate.m */,
 				4A036F011EE92996000AAE7C /* ViewController.h */,
@@ -138,6 +143,15 @@
 				4A036F221EE92997000AAE7C /* Info.plist */,
 			);
 			path = TestCoreMLUITests;
+			sourceTree = "<group>";
+		};
+		4A90E3FA1EE92A9C0032C072 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A90E3FD1EE931550032C072 /* timg.jpeg */,
+				4A90E3FB1EE92AEE0032C072 /* Resnet50.mlmodel */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +265,7 @@
 			files = (
 				4A036F0B1EE92996000AAE7C /* LaunchScreen.storyboard in Resources */,
 				4A036F081EE92996000AAE7C /* Assets.xcassets in Resources */,
+				4A90E3FE1EE931550032C072 /* timg.jpeg in Resources */,
 				4A036F061EE92996000AAE7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +293,7 @@
 			files = (
 				4A036F031EE92996000AAE7C /* ViewController.m in Sources */,
 				4A036F001EE92996000AAE7C /* AppDelegate.m in Sources */,
+				4A90E3FC1EE92AEF0032C072 /* Resnet50.mlmodel in Sources */,
 				4A036EFD1EE92996000AAE7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PWAWE894EX;
 				INFOPLIST_FILE = TestCoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CoreML.TestCoreML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PWAWE894EX;
 				INFOPLIST_FILE = TestCoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CoreML.TestCoreML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +536,7 @@
 				4A036F271EE92997000AAE7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A036F281EE92997000AAE7C /* Build configuration list for PBXNativeTarget "TestCoreMLTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +545,7 @@
 				4A036F2A1EE92997000AAE7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A036F2B1EE92997000AAE7C /* Build configuration list for PBXNativeTarget "TestCoreMLUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +554,7 @@
 				4A036F2D1EE92997000AAE7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
